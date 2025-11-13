@@ -1,0 +1,41 @@
+.navbar-title {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 3.34rem;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.nav-links::after,
+.nav-links::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.nav-links::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.nav-links:hover::after,
+.nav-links:hover::before {
+  transform: scaleX(1);
+}

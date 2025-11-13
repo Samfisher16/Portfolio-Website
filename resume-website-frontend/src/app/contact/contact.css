@@ -1,0 +1,51 @@
+.contact {
+  height: 87vh;
+  background-color: black;
+}
+
+.p-card {
+  background-color: #1e1e1e;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.form-labels {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(45deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.p-inputtext {
+  color: white;
+  background-color: #2e2e2e;
+  border: 0px;
+  border-radius: 3px;
+}
+
+textarea {
+  max-height: 20rem;
+  max-width: 25rem;
+  resize: both;
+}
+
+.btn-clear,
+.btn-submit {
+  width: 6rem;
+  border-radius: 7px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  border-color: black;
+  border-width: 0.3rem;
+}
+
+.btn-clear {
+  background-color: #7873f5;
+  color: white;
+}
+
+.btn-submit {
+  background-color: #ca589d;
+  color: white;
+}
