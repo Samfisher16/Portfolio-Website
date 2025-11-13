@@ -1,0 +1,54 @@
+<div class="contact">
+  <div class="container">
+    <div class="pt-5 d-flex justify-content-center">
+      <p-card class="p-3">
+        <form [formGroup]="contactFormGroup">
+          <div class="d-flex flex-row align-items-center">
+            <div class="col-md-4 text-center"><label class="form-labels">Name :</label></div>
+            <div class="col-md-4">
+              <input
+                type="text"
+                class="p-inputtext"
+                formControlName="name"
+                pattern="^[A-Za-z\s]*$"
+                maxlength="50"
+              />
+            </div>
+          </div>
+          <div class="d-flex flex-row align-items-center mt-2">
+            <div class="col-md-4 text-center"><label class="form-labels">Email :</label></div>
+            <div class="col-md-4">
+              <input
+                type="text"
+                class="p-inputtext"
+                formControlName="email"
+                (keydown)="verifyEmail($event)"
+                maaxlength="50"
+              />
+            </div>
+          </div>
+          <div class="d-flex flex-row align-items-center mt-2">
+            <div class="col-md-4 text-center">
+              <label class="form-labels">Message :</label>
+            </div>
+            <div class="col-md-4">
+              <textarea
+                class="p-inputtext"
+                formControlName="message"
+                rows="5"
+                cols="30"
+                maxlength="500"
+              ></textarea>
+            </div>
+          </div>
+        </form>
+        <div class="mt-2">
+          <div class="d-flex flex-row align-items-center justify-content-end gap-5">
+            <button class="btn btn-clear py-2" (click)="clearForm()">Clear</button>
+            <button class="btn btn-submit py-2">Submit</button>
+          </div>
+        </div>
+      </p-card>
+    </div>
+  </div>
+</div>
