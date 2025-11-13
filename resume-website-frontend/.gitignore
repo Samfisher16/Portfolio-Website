@@ -27,6 +27,7 @@ yarn-error.log
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+/.vscode
 
 # Miscellaneous
 /.angular/cache
@@ -38,6 +39,7 @@ testem.log
 /typings
 __screenshots__/
 package-lock.json
+/.angular
 
 # System files
 .DS_Store
